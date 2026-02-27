@@ -35,7 +35,7 @@ This project focuses on **production-style DevOps deployment** using Docker cont
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 - React.js  
@@ -115,34 +115,34 @@ HostelDevops/
 
 ## Networking & Security
 
-Only Port 80 exposed publicly
-Backend not directly accessible externally
-MongoDB not exposed externally
-Docker internal bridge network used
-JWT-based authentication
-Role-based access control
+-Only Port 80 exposed publicly
+-Backend not directly accessible externally
+-MongoDB not exposed externally
+-Docker internal bridge network used
+-JWT-based authentication
+-Role-based access control
 ---
 
 ## Request Lifecycle Example:
 
-When a student submits a complaint:
-Browser sends HTTP request
-Nginx receives request via Port 80
-Nginx routes /api/* to backend container
-Backend validates JWT
-Backend processes logic
-MongoDB stores or retrieves data
-Response returns through Nginx
-UI updates accordingly
+-When a student submits a complaint:
+-Browser sends HTTP request
+-Nginx receives request via Port 80
+-Nginx routes /api/* to backend container
+-Backend validates JWT
+-Backend processes logic
+-MongoDB stores or retrieves data
+-Response returns through Nginx
+-UI updates accordingly
 ---
 
 ## Architecture Type:
 
-This project follows a Serverful Architecture because:
-Infrastructure is manually managed
-Docker containers are explicitly configured
-Nginx reverse proxy is manually configured
-Networking and port exposure are controlled by the developer
+-This project follows a Serverful Architecture because:
+-Infrastructure is manually managed
+-Docker containers are explicitly configured
+-Nginx reverse proxy is manually configured
+-Networking and port exposure are controlled by the developer
 ---
 
 ## Viewing the Project Documentation (PDF)

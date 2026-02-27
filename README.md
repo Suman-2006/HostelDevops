@@ -139,17 +139,7 @@ HostelDevops/
 
 ---
 
-## Architecture Type:
-
--This project follows a Serverful Architecture because:
--Infrastructure is manually managed
--Docker containers are explicitly configured
--Nginx reverse proxy is manually configured
--Networking and port exposure are controlled by the developer
----
-
-## Viewing the Project Documentation (PDF)
-## 🧠 Architecture Type
+## Architecture Type
 
 This project follows a **Serverful Architecture** because:
 
@@ -160,7 +150,7 @@ This project follows a **Serverful Architecture** because:
 
 ---
 
-## 📄 Viewing the Project Documentation (PDF)
+## Viewing the Project Documentation (PDF)
 
 The final project documentation is included as:
 hostelops.pdf

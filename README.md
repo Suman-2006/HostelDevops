@@ -113,27 +113,30 @@ HostelDevops/
 ├── hostelops.pdf
 ```
 
-## Networking & Security
+## 🔐 Networking & Security
 
--Only Port 80 exposed publicly
--Backend not directly accessible externally
--MongoDB not exposed externally
--Docker internal bridge network used
--JWT-based authentication
--Role-based access control
+- Only **Port 80** is exposed publicly  
+- Backend is not directly accessible externally  
+- MongoDB is not exposed externally  
+- Docker internal bridge network is used  
+- JWT-based authentication implemented  
+- Role-based access control enabled  
+
 ---
 
-## Request Lifecycle Example:
+## 🔁 Request Lifecycle Example
 
--When a student submits a complaint:
--Browser sends HTTP request
--Nginx receives request via Port 80
--Nginx routes /api/* to backend container
--Backend validates JWT
--Backend processes logic
--MongoDB stores or retrieves data
--Response returns through Nginx
--UI updates accordingly
+### When a student submits a complaint:
+
+1. Browser sends HTTP request  
+2. Nginx receives request via Port 80  
+3. Nginx routes `/api/*` to backend container  
+4. Backend validates JWT  
+5. Backend processes business logic  
+6. MongoDB stores or retrieves data  
+7. Response returns through Nginx  
+8. UI updates accordingly  
+
 ---
 
 ## Architecture Type:

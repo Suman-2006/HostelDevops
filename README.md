@@ -1,9 +1,9 @@
-# 🏨 HostelOps
+# HostelOps
 ## Production Deployment of a Containerized Complaint Management System
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 HostelOps is a full-stack complaint management system designed to digitize hostel maintenance workflows.
 
@@ -21,14 +21,14 @@ This project focuses on **production-style DevOps deployment** using Docker cont
 
 ---
 
-## 🚀 Features
+## Features
 
-### 👨‍🎓 Student Module
+### Student Module
 - Register / Login
 - Submit complaint
 - View complaint status
 
-### 👨‍💼 Admin Module
+### Admin Module
 - View all complaints
 - Filter complaints
 - Update complaint status
@@ -58,7 +58,7 @@ This project focuses on **production-style DevOps deployment** using Docker cont
 
 ---
 
-## 🏗 Architecture Overview
+## Architecture Overview
 Client Browser
 ↓
 Port 80 (Public)
@@ -71,7 +71,7 @@ MongoDB Container
 
 ---
 
-### Deployment Strategy
+## Deployment Strategy
 
 - Only **Port 80** is publicly exposed
 - Backend (5000) is internal only
@@ -83,7 +83,7 @@ MongoDB Container
 
 ---
 
-## 🐳 Running the Application
+## Running the Application
 
 ### 1. Clone the Repository
 ```bash
@@ -101,7 +101,7 @@ docker compose up
 http://localhost
 ```
 
-### 📂 Project Structure
+## Project Structure
 ```bash
 HostelDevops/
 ├── backend/
@@ -113,7 +113,8 @@ HostelDevops/
 ├── hostelops.pdf
 ```
 
-### 🔐 Networking & Security
+## Networking & Security
+
 Only Port 80 exposed publicly
 Backend not directly accessible externally
 MongoDB not exposed externally
@@ -122,7 +123,7 @@ JWT-based authentication
 Role-based access control
 ---
 
-### Request Lifecycle Example:
+## Request Lifecycle Example:
 
 When a student submits a complaint:
 Browser sends HTTP request
@@ -135,7 +136,7 @@ Response returns through Nginx
 UI updates accordingly
 ---
 
-### Architecture Type:
+## Architecture Type:
 
 This project follows a Serverful Architecture because:
 Infrastructure is manually managed
@@ -144,7 +145,7 @@ Nginx reverse proxy is manually configured
 Networking and port exposure are controlled by the developer
 ---
 
-### Viewing the Project Documentation (PDF)
+## Viewing the Project Documentation (PDF)
 
 The final project documentation is included as:
 hostelops.pdf
@@ -160,6 +161,6 @@ It will open directly inside VS Code with proper PDF preview
 -Without the extension, VS Code will show raw binary text.
 ---
 
-### Final Note
+## Final Note
 
 HostelOps demonstrates a production-style full-stack deployment using modern DevOps principles, container orchestration, secure reverse proxy configuration, and structured networking practices.

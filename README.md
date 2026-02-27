@@ -113,7 +113,7 @@ HostelDevops/
 ├── hostelops.pdf
 ```
 
-## 🔐 Networking & Security
+## Networking & Security
 
 - Only **Port 80** is exposed publicly  
 - Backend is not directly accessible externally  
@@ -124,7 +124,7 @@ HostelDevops/
 
 ---
 
-## 🔁 Request Lifecycle Example
+## Request Lifecycle Example
 
 ### When a student submits a complaint:
 
@@ -149,18 +149,31 @@ HostelDevops/
 ---
 
 ## Viewing the Project Documentation (PDF)
+## 🧠 Architecture Type
+
+This project follows a **Serverful Architecture** because:
+
+- Infrastructure is manually managed  
+- Docker containers are explicitly configured  
+- Nginx reverse proxy is manually configured  
+- Networking and port exposure are controlled by the developer  
+
+---
+
+## 📄 Viewing the Project Documentation (PDF)
 
 The final project documentation is included as:
 hostelops.pdf
-To open it inside VS Code:
-Open VS Code
-Go to Extensions
-Install the extension:
+
+### To open it inside VS Code:
+1. Open VS Code  
+2. Go to Extensions  
+3. Install the extension:
 ```bash
 vscode-pdf (by tomoki1207)
 ```
-After installing, click on hostelops.pdf
-It will open directly inside VS Code with proper PDF preview
+4. After installing, click on `hostelops.pdf`  
+5. It will open directly inside VS Code with proper PDF preview  
 -Without the extension, VS Code will show raw binary text.
 ---
 

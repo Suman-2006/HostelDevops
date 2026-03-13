@@ -1,0 +1,23 @@
+This patch adds a validation check to the `login` function in `login_controller.py` to ensure the password is provided before proceeding with the authentication logic.
+
+```diff
+--- a/login_controller.py
++++ b/login_controller.py
+@@ -10,6 +10,11 @@
+     data = request.get_json()
+     username = data.get('username')
+     password = data.get('password')
+ 
++    # Validate that the password is not empty or missing
++    if not password:
++        return jsonify({"message": "Password required"}), 400
++
+     user = User.query.filter_by(username=username).first()
+     
+     if user and check_password_hash(user.password_hash, password):
+```
+
+### Changes:
+- Added a conditional check `if not password` to catch cases where the password is an empty string, `None`, or missing from the request body.
+- Returns a `400 Bad Request` status code with the required error message `"Password required"`.
+- Prevents the authentication logic (like password hashing functions) from receiving null inputs which typically cause the crash.
